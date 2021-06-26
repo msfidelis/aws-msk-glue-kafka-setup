@@ -12,6 +12,12 @@ resource "aws_msk_cluster" "main" {
         ]
     }
 
+    client_authentication {
+        sasl {
+            scram = var.kafka_sasl_scram_auth_enabled
+        }
+    }
+
     encryption_info {
         encryption_at_rest_kms_key_arn = aws_kms_key.kms.arn
     }

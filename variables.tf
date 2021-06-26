@@ -35,7 +35,7 @@ variable "broker_ebs_volume_size" {
 }
 
 variable "kafka_sasl_scram_auth_enabled" {
-    default = false
+    default = true
 }
 
 variable "kafka_sasl_scram_auth_configs" {

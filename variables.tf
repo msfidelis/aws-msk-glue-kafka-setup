@@ -34,6 +34,17 @@ variable "broker_ebs_volume_size" {
     default = 100
 }
 
+variable "kafka_sasl_scram_auth_enabled" {
+    default = false
+}
+
+variable "kafka_sasl_scram_auth_configs" {
+    default = {
+        username = "foo", 
+        password  = "doutorequemtemdoutorado"
+    }
+}
+
 variable "open_monitoring" {
     default = true
 }

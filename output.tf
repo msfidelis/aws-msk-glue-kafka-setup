@@ -11,8 +11,3 @@ output "bootstrap_brokers_sasl_scram" {
   description = "SASL SCRAM connection host:port pairs"
   value       = aws_msk_cluster.main.bootstrap_brokers_sasl_scram
 }
-
-# output "bootstrap_brokers_sasl_iam" {
-#   description = "SASL IAM connection host:port pairs"
-#   value       = aws_msk_cluster.main.bootstrap_brokers_sasl_iam
-# }
